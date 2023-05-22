@@ -16,7 +16,7 @@ const dylib = Deno.dlopen(
 );
 const ffiStrJoin = dylib.symbols.str_join;
 
-const N = 35;
+const N = 100_0000;
 
 Deno.bench({
   name: "warmup",
